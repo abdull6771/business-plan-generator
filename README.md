@@ -127,4 +127,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Built with ❤️ by Nabafat.AI to empower entrepreneurs and innovators.
+Built by Nabafat.AI to empower entrepreneurs and innovators.
