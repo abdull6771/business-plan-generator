@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Nabafat.AI - Empowering Vision Intelligence</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+            color: #1F2937;
+            margin: 0;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1516321310764-8d9c634f36d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            border-radius: 1rem;
+            padding: 5rem 2rem;
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .section-title {
+            position: relative;
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #1E3A8A;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .section-title::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #4F46E5;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .feature-card {
+            background: #F9FAFB;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            text-align: center;
+            border-left: 4px solid #4F46E5;
+            transition: background 0.3s ease;
+        }
+        .feature-card:hover {
+            background: #E5E7EB;
+        }
+        .feature-card img {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .service-card {
+            background: white;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .cta-button {
+            background: linear-gradient(to right, #4F46E5, #7C3AED);
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            color: white;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .footer {
+            background: #1E3A8A;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 1rem;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                padding: 3rem 1rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+            .section-title {
+                font-size: 1.75rem;
+            }
+            .feature-card img {
+                width: 60px;
+                height: 60px;
+            }
+            .feature-grid, .service-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container mx-auto flex justify-between items-center">
+            
+            <div class="space-x-6">
+                <a href="/">Home</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto">
+        <div class="hero">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">About Nabafat.AI</h1>
+            <p class="text-lg md:text-xl mb-6">Empowering Smart Machines with Vision Intelligence</p>
+            <a href="#contact" class="cta-button">Partner with Us</a>
+        </div>
+
+        <div class="card">
+            <h2 class="section-title">Our Mission</h2>
+            <p class="text-gray-600 text-center text-lg mx-auto max-w-3xl">
+                At Nabafat.AI, we are redefining the future of smart machines. As a central platform for vision intelligence, we enable businesses to seamlessly integrate AI into dynamic environments—no AI expertise required. Our mission is to democratize advanced technology, helping companies achieve their goals with innovative, tailored solutions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2 class="section-title">Why Choose Nabafat.AI?</h2>
+            <p class="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
+                Take your company to the next level with AI-driven solutions designed for scalability, security, and success.
+            </p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <img src="https://img.icons8.com/color/96/000000/lightning-bolt.png" alt="Custom Solutions">
+                    <h3 class="text-xl font-semibold text-gray-800">Custom Business Solutions</h3>
+                    <p class="text-gray-600">Tailored technology integrations to meet your unique business needs.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://img.icons8.com/color/96/000000/automation.png" alt="Automation">
+                    <h3 class="text-xl font-semibold text-gray-800">Automation for All</h3>
+                    <p class="text-gray-600">Streamline operations with AI automation, regardless of company size.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://img.icons8.com/color/96/000000/cloud-network.png" alt="Cloud Infrastructure">
+                    <h3 class="text-xl font-semibold text-gray-800">Cloud Infrastructure</h3>
+                    <p class="text-gray-600">Scalable, secure cloud systems to accelerate your growth.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="https://img.icons8.com/color/96/000000/shield.png" alt="Cyber Security">
+                    <h3 class="text-xl font-semibold text-gray-800">AI-Powered Cyber Security</h3>
+                    <p class="text-gray-600">Advanced, self-learning defenses against cyber threats.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="section-title">Our Services</h2>
+            <p class="text-gray-600 text-center mb-8 max-w-3xl mx-auto">
+                We deliver top-rated services with integrity and dedication, ensuring every project drives measurable results.
+            </p>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Automated AI Chatbots</h3>
+                    <p class="text-gray-600">Enhance customer engagement with intelligent chatbots tailored for any website.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Virtual Reality</h3>
+                    <p class="text-gray-600">Immersive VR experiences crafted to elevate your brand and captivate audiences.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Machine Learning</h3>
+                    <p class="text-gray-600">Custom AI security solutions that adapt and protect against evolving cyber risks.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2">Internet of Things</h3>
+                    <p class="text-gray-600">AI-driven IoT and cloud infrastructure to automate and scale your business.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card text-center">
+            <h2 class="section-title">Ready to Transform Your Business?</h2>
+            <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
+                Join leading companies partnering with Nabafat.AI to harness the power of vision intelligence and AI-driven innovation.
+            </p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+
+        <div class="footer">
+            <p class="text-sm">© 2025 Nabafat.AI. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Empowering the Future of Smart Machines with Vision Intelligence</p>
+        </div>
+    </div>
+</body>
+</html>

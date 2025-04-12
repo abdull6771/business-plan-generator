@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Plan Generator - Nabafat.AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+            color: #1F2937;
+            margin: 0;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .navbar {
+            background: #1E3A8A;
+            padding: 1rem 2rem;
+            border-radius: 0 0 1rem 1rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+        .navbar a {
+            color: white;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: #A5B4FC;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            border-radius: 1rem;
+            padding: 4rem;
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card {
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .feature-card {
+            background: #F3F4F6;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        .feature-card:hover {
+            background: #E5E7EB;
+        }
+        .feature-card img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            background: linear-gradient(to right, #4F46E5, #7C3AED);
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            color: white;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        textarea {
+            resize: vertical;
+            transition: border-color 0.3s ease;
+        }
+        textarea:focus {
+            border-color: #4F46E5;
+        }
+        .result-section {
+            background: #F9FAFB;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            margin-top: 1.5rem;
+            border-left: 4px solid #4F46E5;
+        }
+        .result-section h3 {
+            color: #1E3A8A;
+            font-size: 1.75rem;
+            margin-bottom: 1.25rem;
+            position: relative;
+        }
+        .result-section h3::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #4F46E5;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        .footer {
+            background: #1E3A8A;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 1rem;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                padding: 2rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            .navbar {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-xl font-bold">Nabafat.AI</a>
+            <div class="space-x-6">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto">
+        <div class="hero">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 text-black">Launch Your Vision with AI-Powered Business Planning</h1>
+            <p class="text-lg md:text-xl mb-6 text-black">Transform your innovative ideas into actionable strategies that captivate investors.</p>
+            <a href="#generator" class="cta-button">Get Started Now</a>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <img src="https://img.icons8.com/color/96/000000/lightning-bolt.png" alt="Fast Analysis">
+                <h3 class="text-lg font-semibold">Rapid Market Insights</h3>
+                <p class="text-gray-600">Get instant market analysis to validate your business idea.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://img.icons8.com/color/96/000000/money-bag.png" alt="Financial Projections">
+                <h3 class="text-lg font-semibold">Robust Financials</h3>
+                <p class="text-gray-600">Detailed projections to showcase profitability and growth.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://img.icons8.com/color/96/000000/handshake.png" alt="Investor Pitch">
+                <h3 class="text-lg font-semibold">Compelling Pitches</h3>
+                <p class="text-gray-600">Craft investor-ready pitches that stand out.</p>
+            </div>
+        </div>
+
+        <div id="generator" class="card">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Generate Your Business Plan</h2>
+            <p class="text-center text-gray-600 mb-8">Input your business idea and let our AI create a professional plan tailored for success.</p>
+            <form method="POST" class="space-y-6">
+                <div>
+                    <label for="business_idea" class="block text-lg font-medium text-gray-700">Your Business Idea</label>
+                    <textarea id="business_idea" name="business_idea" rows="6" class="mt-2 w-full p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Describe your business idea in detail..." required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="cta-button">Generate Plan</button>
+                </div>
+            </form>
+        </div>
+
+        {% if result %}
+        <div class="card">
+            {% if result.error %}
+            <div class="result-section">
+                <h3 class="text-red-600">Error</h3>
+                <p>{{ result.error }}</p>
+            </div>
+            {% else %}
+            <div class="result-section">
+                <h3>Business Strategy</h3>
+                <div>{{ result.business_strategy | safe }}</div>
+            </div>
+            <div class="result-section">
+                <h3>Financial Projection</h3>
+                <div>{{ result.financial_projection | safe }}</div>
+            </div>
+            <div class="result-section">
+                <h3>Investor Pitch</h3>
+                <div>{{ result.investor_pitch | safe }}</div>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <div class="footer">
+            <p class="text-sm">© 2025 Nabafat.AI. Empowering entrepreneurs with AI-driven insights.</p>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
